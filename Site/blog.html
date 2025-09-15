@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+        <title>My Blog</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mediaQueries.css" />
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Michael Ferguson Blog</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#recent">Most Recent</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Back</a></li>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Michael Ferguson</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#recent" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="#index.html" onclick="toggleMenu()">Back</a></li>
+                </div>
+        </nav>
+        <section id = "about">
+            <p class="section__text__p1">Get to know more</p>
+            <h1 class="title">About the Blog</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/blog/blog-about.png" alt="profile picture" class="about-pic"/>
+                </div>
+                <div class="about-details-container">
+                    <div class="text-container">
+                        <p>I am a dedicated software developer with 5 years of coding experience. Through various personal projects, I have continuously refined my skills and expanded my expertise. Currently, I'm pursuing a degree in Computer Science with a concentration in Software Engineering at Arizona State University. As a quick and eager learner, I'm passionate about growing my knowledge and honing my abilities.</p>
+                    </div>
+                </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'"/>
+        </section>
+        <section id="recent">
+            <p class="section__text__p1">Latest Updates</p>
+            <h1 class="title">Most Recent</h1>
+            <div class="section-container">
+                <div class="recent-post-container">
+                    <div class="recent-post">
+                        <div class="recent-post-details">
+                            <h2>Exploring New Technologies in 2024</h2>
+                            <p>
+                                Dive into the latest advancements in software development, including AI integration, web performance optimization, and dynamic content rendering. Learn about the tools and strategies shaping the future of technology.
+                            </p>
+                            <a href="./posts/exploring-new-technologies.html" class="btn btn-color-1">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+                <img
+                  src="./assets/email.png"
+                  alt="Email icon"
+                  class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:mferg3838@gmail.com">mferg3838@gmail.com</a></p>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <nav>
+              <div class="nav-links-container">
+                <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#recent">Most Recent</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="index.html">Portfolio</a></li>
+                </ul>
+              </div>
+            </nav>
+          </footer>        
+    </body>
+</html>
