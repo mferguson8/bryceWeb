@@ -528,3 +528,39 @@ footer p {
   margin-bottom: 1rem;
   text-align: justify;
 }
+
+.blog-about {
+  border-radius: 2rem;
+  border: 1px solid rgb(163, 163, 163);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-about:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+#about .section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+/* Page-specific overrides */
+.home #about .section-container {
+  flex-direction: row; /* put image next to text on index.html only */
+  align-items: center;
+  gap: 4rem;
+}
+
+/* Slightly shift the About section image left (only on index page) */
+.home #about .section__pic-container {
+  transform: translateX(-80px);
+}
